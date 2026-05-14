@@ -187,7 +187,7 @@ export const App = () => {
             <Swiper slidesPerView="auto" spaceBetween={12}>
               {slider2Items.map(item => (
                 <SwiperSlide key={item.id} style={{ width: 'fit-content' }}>
-                  <div className={appSt.sliderCard}>
+                  <div className={appSt.sliderCard} style={{ minHeight: '172px' }}>
                     <img style={{ marginTop: '-54px' }} src={item.img} alt={item.title} width={212} height={114} />
                     <Typography.Text view="primary-medium" weight="bold">
                       {item.title}
